@@ -1,45 +1,53 @@
 
 plugins {
     id 'com.android.application'
-    
 }
 
 android {
-    signingConfigs {
-        release {
-        storeFile file('HunMod.jks')
-            storePassword 'HunMod'
-            keyAlias 'HunMod'
-            keyPassword 'HunMod'
-        }
-    }
     namespace = 'dev.retiredgamer.modmenuinvokes'
     compileSdk 35
-    
+
     defaultConfig {
         applicationId "dev.retiredgamer.modmenuinvokes"
         minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
-        
-        vectorDrawables { 
+
+        vectorDrawables {
             useSupportLibrary = true
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('HunMod.jks')
+            storePassword 'HunMod'
+            keyAlias 'HunMod'
+            keyPassword 'HunMod'
+        }
+        debug {
+            storeFile file('HunMod.jks')
+            storePassword 'HunMod'
+            keyAlias 'HunMod'
+            keyPassword 'HunMod'
         }
     }
 
     buildTypes {
         release {
+            signingConfig = signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            debuggable true
-            jniDebuggable false
-        }
-        debug {
             debuggable false
             jniDebuggable false
+        }
+
+        debug {
             signingConfig = signingConfigs.debug
             minifyEnabled false
+            debuggable true
+            jniDebuggable false
         }
     }
 
@@ -50,15 +58,11 @@ android {
 
     buildFeatures {
         viewBinding = true
-        
     }
-    
 }
 
 dependencies {
-
-
-    implementation('com.google.android.material:material:1.12.0')
-    implementation('androidx.constraintlayout:constraintlayout:2.2.1')
-    implementation('androidx.appcompat:appcompat:1.7.1')
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
 }
