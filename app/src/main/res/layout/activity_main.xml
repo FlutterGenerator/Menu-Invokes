@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/controlbuttonsid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16.0dip"
+        android:paddingTop="16.0dip" >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16.0dip"
+            android:background="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/button_forward"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16.0dip"
+            android:background="@drawable/ic_arrow_forward"
+            android:contentDescription="@string/forward"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/versionType"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100.0dip"
+        android:orientation="horizontal"
+        android:padding="16.0dip"
+        android:visibility="gone"
+        android:weightSum="2.0">
+
+        <Button
+            android:id="@+id/below"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_rounded_blue"
+            android:text="@string/_2_9_and_below"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/above"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginStart="8.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_rounded_green"
+            android:text="@string/_3_2_and_above"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/libnamelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="16.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/libname_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:background="@android:color/transparent"
+            android:text="@string/library_name"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/libname"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/enter_library_name"
+            android:padding="12.0dip"
+            android:textColor="@color/white"
+            android:textSize="16.0sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <RelativeLayout
+            android:id="@+id/imgui_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/border"
+            android:padding="12.0dip"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/button_copy_imgui"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="4.0dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/copy_code"
+                android:src="@drawable/ic_copy"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint" />
+
+            <HorizontalScrollView
+                android:id="@+id/code_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="40.0dip"
+                android:layout_toStartOf="@+id/button_copy_imgui"
+                android:background="@android:color/transparent"
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/imgui_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip"
+                    android:text="@string/imgui_codes_will_be_shown_here"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate_imgui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_green"
+        android:text="@string/generate"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/activity_mainLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:orientation="vertical"
+        android:padding="12.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="40.0dip"
+            android:background="@drawable/border"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/button_copy_alert"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8.0dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/copy"
+                android:src="@drawable/ic_copy" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/button_copy_alert"
+                android:paddingEnd="32.0dip"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/alert_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip"
+                    android:text="@string/alert_codes_will_be_shown_here"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/text2"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/border"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/button_copy_activity"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8.0dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/copy"
+                android:src="@drawable/ic_copy" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/button_copy_activity"
+                android:paddingEnd="32.0dip"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/activity_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip"
+                    android:text="@string/activities_code_will_be_shown_here"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/text3"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/border"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/button_copy_service"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8.0dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/copy"
+                android:src="@drawable/ic_copy" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/button_copy_service"
+                android:paddingEnd="32.0dip"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/service_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip"
+                    android:text="@string/service_code_will_be_shown_here"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modtypeid"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300.0dip"
+        android:orientation="horizontal"
+        android:padding="16.0dip"
+        android:weightSum="2.0">
+
+        <Button
+            android:id="@+id/button_Lgl"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_rounded_blue"
+            android:text="@string/lgl_invokes"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_Imgui"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginStart="8.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_rounded_green"
+            android:text="@string/imgui_invoke"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
