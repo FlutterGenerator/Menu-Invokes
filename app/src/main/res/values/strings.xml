@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Menu Invokes</string>
-    <string name="back">Back</string>
-    <string name="forward">Forward</string>
-    <string name="_2_9_and_below">2.9 And Below</string>
-    <string name="_3_2_and_above">3.2 And above</string>
-    <string name="library_name">Library Name</string>
-    <string name="enter_library_name">Enter library name…</string>
-    <string name="copy_code">Copy code</string>
-    <string name="lgl_invokes">Lgl Invokes</string>
-    <string name="service_code_will_be_shown_here">Service code will be shown here</string>
-    <string name="copy">Copy</string>
-    <string name="alert_codes_will_be_shown_here">Alert codes will be shown here</string>
-    <string name="generate">Generate</string>
-    <string name="imgui_codes_will_be_shown_here">Imgui codes will be shown here</string>
-    <string name="activities_code_will_be_shown_here">Activities code will be shown here</string>
-    <string name="imgui_invoke">Imgui invoke</string>
+    <string name="app_name" translatable="false">Menu Invokes</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="forward" translatable="false">Forward</string>
+    <string name="_2_9_and_below" translatable="false">2.9 And Below</string>
+    <string name="_3_2_and_above" translatable="false">3.2 And above</string>
+    <string name="library_name" translatable="false">Library Name</string>
+    <string name="enter_library_name" translatable="false">Enter library name…</string>
+    <string name="copy_code" translatable="false">Copy code</string>
+    <string name="lgl_invokes" translatable="false">Lgl Invokes</string>
+    <string name="service_code_will_be_shown_here" translatable="false">Service code will be shown here</string>
+    <string name="copy" translatable="false">Copy</string>
+    <string name="alert_codes_will_be_shown_here" translatable="false">Alert codes will be shown here</string>
+    <string name="generate" translatable="false">Generate</string>
+    <string name="imgui_codes_will_be_shown_here" translatable="false">Imgui codes will be shown here</string>
+    <string name="activities_code_will_be_shown_here" translatable="false">Activities code will be shown here</string>
+    <string name="imgui_invoke" translatable="false">Imgui invoke</string>
 </resources>

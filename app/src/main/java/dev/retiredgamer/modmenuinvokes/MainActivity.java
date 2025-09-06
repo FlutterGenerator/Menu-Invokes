@@ -22,7 +22,10 @@ public class MainActivity extends Activity {
     ImageButton button_copy_activity, button_copy_alert, button_copy_imgui, button_copy_service;
     TextView activity_code, alert_code, service_code, imgui_code;
     EditText libname;
-    RelativeLayout controlbuttonsid, imgui_layout, text1, text2, text3;
+    RelativeLayout controlbuttonsid;
+    RelativeLayout text1;
+    RelativeLayout text2;
+    RelativeLayout text3;
     LinearLayout libnamelayout, modtypeid, versionType;
     String activity, alert, service;
 
@@ -150,10 +153,12 @@ public class MainActivity extends Activity {
     private void generateAbove() {
         alert = "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />";
         activity = "invoke-static {p0}, Lcom/android/support/Main;->Start(Landroid/content/Context;)V";
-        service = "<service\n android:name=\"com.android.support.Launcher\"\n" +
-                "android:enabled=\"true\"\n" +
-                "android:exported=\"false\"\n" +
-                "android:stopWithTask=\"true\"/>";
+        service = """
+                <service
+                android:name="com.android.support.Launcher"
+                android:enabled="true"
+                android:exported="false"
+                android:stopWithTask="true"/>""";
         alert_code.setText(alert);
         activity_code.setText(activity);
         service_code.setText(service);
@@ -163,11 +168,12 @@ public class MainActivity extends Activity {
     private void generateBelow() {
         alert = "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\" />";
         activity = "invoke-static {p0}, Luk/lgl/MainActivity;->Start(Landroid/content/Context;)V";
-        service = "<service\n" +
-                "android:name=\"uk.lgl.modmenu.FloatingModMenuService\"\n" +
-                "android:enabled=\"true\"\n" +
-                "android:exported=\"false\"\n" +
-                "android:stopWithTask=\"true\" />";
+        service = """
+                <service
+                android:name="uk.lgl.modmenu.FloatingModMenuService"
+                android:enabled="true"
+                android:exported="false"
+                android:stopWithTask="true" />""";
         alert_code.setText(alert);
         activity_code.setText(activity);
         service_code.setText(service);

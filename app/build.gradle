@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = 'dev.retiredgamer.modmenuinvokes'
-    compileSdk 35
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "dev.retiredgamer.modmenuinvokes"
-        minSdk 21
-        targetSdk 35
+        minSdkVersion 21
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0"
 
@@ -52,12 +52,16 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     buildFeatures {
         viewBinding = true
+    }
+    dependenciesInfo {
+        includeInApk = true
+        includeInBundle = true
     }
 }
 

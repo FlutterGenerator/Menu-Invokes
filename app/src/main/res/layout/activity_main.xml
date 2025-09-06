@@ -308,7 +308,8 @@
             android:layout_weight="1.0"
             android:background="@drawable/btn_rounded_blue"
             android:text="@string/lgl_invokes"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button_Imgui"
@@ -319,7 +320,8 @@
             android:layout_weight="1.0"
             android:background="@drawable/btn_rounded_green"
             android:text="@string/imgui_invoke"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="VisualLintButtonSize" />
     </LinearLayout>
 
 </LinearLayout>
