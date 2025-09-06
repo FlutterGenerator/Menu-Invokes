@@ -1,4 +1,4 @@
-name: Menu Invokes 1.0 Build
+name: Menu Invokes Build
 permissions:
   contents: write
 on:
