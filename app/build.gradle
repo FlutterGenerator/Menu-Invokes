@@ -40,14 +40,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             debuggable false
-            jniDebuggable false
         }
 
         debug {
             signingConfig = signingConfigs.debug
             minifyEnabled false
             debuggable true
-            jniDebuggable false
         }
     }
 
