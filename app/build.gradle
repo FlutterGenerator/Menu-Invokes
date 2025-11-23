@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = 'dev.retiredgamer.modmenuinvokes'
+    namespace = "dev.retiredgamer.modmenuinvokes"
     compileSdkVersion 36
 
     defaultConfig {
