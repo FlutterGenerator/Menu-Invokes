@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Menu Invokes</string>
+    <string name="back">Бозгашт</string>
+    <string name="forward">Ба пеш</string>
+    <string name="_2_9_and_below">2.9 ва Поен</string>
+    <string name="_3_2_and_above">3.2 ва Боло</string>
+    <string name="library_name">Номи китобхона</string>
+    <string name="enter_library_name">Номи китобхонаро ворид кунед…</string>
+    <string name="copy_code">Рамзро нусхабардорӣ кунед</string>
+    <string name="lgl_invokes">Lgl Даъват Карда Мешавад</string>
+    <string name="service_code_will_be_shown_here">Дар ин ҷо рамзи хидмат нишон дода мешавад</string>
+    <string name="copy">Нусхабардорӣ</string>
+    <string name="alert_codes_will_be_shown_here">Рамзҳои огоҳӣ дар ин ҷо нишон дода мешаванд</string>
+    <string name="generate">Тавлид кардан</string>
+    <string name="imgui_codes_will_be_shown_here">Рамзҳои Imgui дар ин ҷо нишон дода мешаванд</string>
+    <string name="activities_code_will_be_shown_here">Рамзи амал дар ин ҷо нишон дода мешавад</string>
+    <string name="imgui_invoke">Imgui invoke</string>
+</resources>
