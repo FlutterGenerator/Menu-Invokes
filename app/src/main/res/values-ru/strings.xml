@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Menu Invokes</string>
+    <string name="back">Назад</string>
+    <string name="forward">Вперед</string>
+    <string name="_2_9_and_below">2.9 И Ниже</string>
+    <string name="_3_2_and_above">3.2 И Выше</string>
+    <string name="library_name">Название библиотеки</string>
+    <string name="enter_library_name">Введите название библиотеки…</string>
+    <string name="copy_code">Скопируйте код</string>
+    <string name="lgl_invokes">Вызывается Lgl</string>
+    <string name="service_code_will_be_shown_here">Здесь будет показан сервисный код</string>
+    <string name="copy">Копировать</string>
+    <string name="alert_codes_will_be_shown_here">Здесь будут показаны коды предупреждений</string>
+    <string name="generate">Генерировать</string>
+    <string name="imgui_codes_will_be_shown_here">Здесь будут показаны коды Imgui</string>
+    <string name="activities_code_will_be_shown_here">Здесь будут показаны коды действий</string>
+    <string name="imgui_invoke">Вызов Imgui</string>
+</resources>
