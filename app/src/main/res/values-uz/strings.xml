@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Menu Invokes</string>
+    <string name="back">Orqaga</string>
+    <string name="forward">Oldinga</string>
+    <string name="_2_9_and_below">2.9 va undan past</string>
+    <string name="_3_2_and_above">3.2 va undan yuqori</string>
+    <string name="library_name">Kutubxona nomi</string>
+    <string name="enter_library_name">Kutubxona nomini kiriting…</string>
+    <string name="copy_code">Kodni nusxalash</string>
+    <string name="lgl_invokes">Lgl chaqiradi</string>
+    <string name="service_code_will_be_shown_here">Xizmat kodi shu yerda ko\'rsatiladi</string>
+    <string name="copy">Nusxalash</string>
+    <string name="alert_codes_will_be_shown_here">Bu yerda ogohlantirish kodlari ko\'rsatiladi</string>
+    <string name="generate">Yaratish</string>
+    <string name="imgui_codes_will_be_shown_here">Bu yerda Imgui kodlari ko\'rsatiladi</string>
+    <string name="activities_code_will_be_shown_here">Faoliyat kodi shu yerda ko\'rsatiladi</string>
+    <string name="imgui_invoke">Imgui chaqiruv</string>
+</resources>
