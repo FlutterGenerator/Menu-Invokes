@@ -1,5 +1,8 @@
 # Menu-Invokes
 Menu-Invokes
+
+[![License Info](https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=flat-square)](https://github.com/FlutterGenerator/Menu-Invokes/blob/master/LICENSE)
+
 <div align="center">
 
   <a href="https://github.com/FlutterGenerator/Menu-Invokes/releases">
