@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    alias(libs.plugins.android.application)
 }
 
 android {
@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "dev.retiredgamer.modmenuinvokes"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 36
-        versionCode 2
-        versionName "1.2"
+        versionCode 3
+        versionName "1.3"
 
         vectorDrawables {
             useSupportLibrary = true
@@ -63,7 +63,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.android.material:material:1.14.0-alpha09'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation(libs.material)
+    implementation libs.constraintlayout
+    implementation libs.appcompat
 }
